@@ -35,7 +35,7 @@
     <div class="side-bottom"><div class="tip"><strong>ASTROPHYSIK · PROJEKT</strong>Weltbilder, Beobachtungen und eigene Medien an einem Ort.</div></div>
   </aside>
   <main class="main">
-    <header class="topbar"><div class="crumb"><button class="icon-button mobile-menu" aria-label="Menü öffnen">☰</button><b>Homepage</b></div><div class="top-actions"><button id="helpBtn" class="icon-button" aria-label="Hilfe">?</button><div class="avatar">P</div></div></header>
+    <header class="topbar"><div class="crumb"><button class="icon-button mobile-menu" aria-label="Menü öffnen">☰</button><b>Homepage</b></div><div class="top-actions"><button id="exportPackage" class="icon-button" title="Gemeinsames Paket exportieren">⇩</button><button id="helpBtn" class="icon-button" aria-label="Hilfe">?</button><div class="avatar">P</div></div></header>
     <div class="content">
       <section class="hero"><div><div class="eyebrow" id="dateLabel"></div><div class="project-kicker">Gegenüberstellung von</div><h1>Geozentrisches und heliozentrisches Weltbild</h1><p> made by Ali Shiyu Nam Li </p><button class="primary" id="addBtn"><span class="plus">＋</span>Inhalte hinzufügen</button></div></section>
       <div class="stats"><div class="stat"><b id="pluginCount">0</b> Plugins</div><div class="stat"><b id="activeCount">0</b> aktiv</div><div class="stat">Lokal gespeichert</div></div>
@@ -54,7 +54,7 @@
   <div class="field" id="descField"><label for="pluginDesc">Kurzbeschreibung</label><input id="pluginDesc" maxlength="80" placeholder="Wofür ist dieses Plugin gedacht?"></div>
   <div class="modal-actions"><button type="button" class="secondary" id="cancelModal">Abbrechen</button><button class="primary" type="submit">Zum Dashboard hinzufügen</button></div></form></div>
 <div class="toast" id="toast"></div>
-<script>
+<script src="shared-package.js"></script><script src="shared-home.js"></script><script>
 (()=>{
   const KEY='shiji-plugins-v1';
   const defaults=[
@@ -146,7 +146,7 @@
   function toast(s){const t=$('#toast');t.textContent=s;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),2100)}
   function tick(){const now=new Date(),time=now.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'}),date=now.toLocaleDateString('de-DE',{month:'long',day:'numeric',weekday:'long'});document.querySelectorAll('.clock').forEach(el=>el.textContent=time);document.querySelectorAll('.clock-date').forEach(el=>el.textContent=date)}
   function localDate(){const d=new Date(),days=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];document.querySelector('#dateLabel').textContent=days[d.getDay()] + ', ' + d.getDate() + '.' + (d.getMonth()+1) + '.' + d.getFullYear()}
-  localDate();render();tick();setInterval(tick,15000);
+  localDate();render();tick();setInterval(tick,15000);document.querySelector('#exportPackage').onclick=()=>window.KosmosPackage.export().catch(()=>toast('Paket konnte nicht erstellt werden.'));
 })();
 </script>
 </body>
