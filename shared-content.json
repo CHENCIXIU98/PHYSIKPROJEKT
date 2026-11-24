@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-24T20:51:12.254Z",
+  "plugins": [
+    {
+      "id": "local-1795549694539",
+      "name": "Zeitstahl des Geozentrische Weltbild",
+      "desc": "",
+      "kind": "local-file",
+      "active": true,
+      "emoji": "▶",
+      "color": "#e8eddf",
+      "fileName": "geozentrisches-weltbild-zeitleiste.html",
+      "mediaType": "text/html",
+      "asset": "media/plugin-geozentrisches-weltbild-zeitleiste.html"
+    },
+    {
+      "id": "local-1795549814462",
+      "name": "Vergleich zwischen Geo- und Helio-.",
+      "desc": "",
+      "kind": "local-image",
+      "active": true,
+      "emoji": "▧",
+      "color": "#e8eddf",
+      "fileName": "Vergleich der Weltbilder_ Erde und Sonne.png",
+      "asset": "media/plugin-Vergleich-der-Weltbilder_-Erde-und-Sonne.png",
+      "mediaType": "image/png"
+    }
+  ],
+  "videos": [],
+  "presentation": {
+    "title": "Die Ordnung des Kosmos",
+    "description": "",
+    "slides": []
+  }
+}

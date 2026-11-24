@@ -18,7 +18,7 @@
 <input type="file" id="imageFiles" accept="image/*" multiple hidden>
 <div class="dialog-backdrop" id="dialog"><form class="dialog" id="introForm"><h2>Einführung bearbeiten</h2><p>Titel und Einleitung deiner Bildpräsentation.</p><div class="field"><label for="titleInput">Titel</label><input id="titleInput" maxlength="100" required></div><div class="field"><label for="introInput">Einleitung</label><textarea id="introInput" maxlength="1200"></textarea></div><div class="actions"><button class="secondary" type="button" id="cancelIntro">Abbrechen</button><button class="primary" type="submit">Speichern</button></div></form></div>
 <div class="toast" id="toast"></div>
-<script src="shared-package.js"></script><script>
+<script src="shared-content.js"></script><script src="shared-package.js"></script><script>
 (()=>{
 const DB='physik-project-pages',DB_VERSION=1,STORE='files',SETTINGS='settings',SLIDES_KEY='presentation-slides',INTRO_KEY='presentation-intro';let dbPromise,urls=[],slides=[],sharedDeck=null,intro={title:'Die Ordnung des Kosmos',description:'Eine Bildreise vom geozentrischen zum heliozentrischen Weltbild. Scrolle Folie für Folie durch dein Projekt.'};
 const $=s=>document.querySelector(s),root=$('#slides');
