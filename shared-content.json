@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-24T20:51:12.254Z",
+  "generatedAt": "2026-11-25T18:09:15.522Z",
   "plugins": [
     {
       "id": "local-1795549694539",
@@ -27,7 +27,14 @@
       "mediaType": "image/png"
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "id": "page-video-1795630140429-wfpun",
+      "title": "Geo-und heliozentrische Weltbild",
+      "description": "Einsteig",
+      "asset": "media/video-d960248af190500e8d7ce3c7240b2ad4.mp4"
+    }
+  ],
   "presentation": {
     "title": "Die Ordnung des Kosmos",
     "description": "",

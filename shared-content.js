@@ -1,1 +1,43 @@
-window.PHYSIK_SHARED_CONTENT = {"version":1,"generatedAt":"2026-11-24T20:51:12.254Z","plugins":[{"id":"local-1795549694539","name":"Zeitstahl des Geozentrische Weltbild","desc":"","kind":"local-file","active":true,"emoji":"▶","color":"#e8eddf","fileName":"geozentrisches-weltbild-zeitleiste.html","mediaType":"text/html","asset":"media/plugin-geozentrisches-weltbild-zeitleiste.html"},{"id":"local-1795549814462","name":"Vergleich zwischen Geo- und Helio-.","desc":"","kind":"local-image","active":true,"emoji":"▧","color":"#e8eddf","fileName":"Vergleich der Weltbilder_ Erde und Sonne.png","asset":"media/plugin-Vergleich-der-Weltbilder_-Erde-und-Sonne.png","mediaType":"image/png"}],"videos":[],"presentation":{"title":"Die Ordnung des Kosmos","description":"","slides":[]}};
+window.PHYSIK_SHARED_CONTENT = {
+  "version": 1,
+  "generatedAt": "2026-11-25T18:09:15.522Z",
+  "plugins": [
+    {
+      "id": "local-1795549694539",
+      "name": "Zeitstahl des Geozentrische Weltbild",
+      "desc": "",
+      "kind": "local-file",
+      "active": true,
+      "emoji": "▶",
+      "color": "#e8eddf",
+      "fileName": "geozentrisches-weltbild-zeitleiste.html",
+      "mediaType": "text/html",
+      "asset": "media/plugin-geozentrisches-weltbild-zeitleiste.html"
+    },
+    {
+      "id": "local-1795549814462",
+      "name": "Vergleich zwischen Geo- und Helio-.",
+      "desc": "",
+      "kind": "local-image",
+      "active": true,
+      "emoji": "▧",
+      "color": "#e8eddf",
+      "fileName": "Vergleich der Weltbilder_ Erde und Sonne.png",
+      "asset": "media/plugin-Vergleich-der-Weltbilder_-Erde-und-Sonne.png",
+      "mediaType": "image/png"
+    }
+  ],
+  "videos": [
+    {
+      "id": "page-video-1795630140429-wfpun",
+      "title": "Geo-und heliozentrische Weltbild",
+      "description": "Einsteig",
+      "asset": "media/video-d960248af190500e8d7ce3c7240b2ad4.mp4"
+    }
+  ],
+  "presentation": {
+    "title": "Die Ordnung des Kosmos",
+    "description": "",
+    "slides": []
+  }
+};
